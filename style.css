@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+html, body {
+    height: 87vh;
+    width: 97vw;
+    background-color: dimgrey;
+    color: aliceblue;
+}
+
+.boxes{
+    margin: 3rem auto;
+    display: flex;
+    position: relative;
+}
+
+.boxes .content {
+    margin: 0 auto;
+    height: 75vh;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+    border-radius: 0.7rem;
+    background-color: darkgray;
+    display: none;
+}
+
+.content:nth-child(2) {
+    left: 12%;
+    background-color: darkolivegreen;
+    position: absolute;
+}
+.content:nth-child(3) {
+    left: 12%;
+    background-color:dodgerblue;
+    position: absolute;
+}
+.content:nth-child(4) {
+    left: 12%;
+    background-color: tomato;
+    position: absolute;
+}
+
+.buttons {
+    width: 100vw;
+    height: 5rem;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 3rem;
+    position: fixed;
+    bottom: 0;
+}
+
+.buttons button {
+    width: 10vmin;
+    height: 10vmin;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: dodgerblue;
+    outline: none;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+button.active {
+    background-color: aquamarine;
+    transform: scale(1);
+    box-shadow: 0 3px 10px black;
+}
+
+.content.active {
+    display: flex;
+}
+
+/* .content.hide {
+    display: none;
+} */
+
